@@ -11,7 +11,12 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class   : 'syntax'
 # Gems
 plugins:
   - jekyll-gist
@@ -45,3 +50,11 @@ author:
 
 # Custom vars
 version: 3.0.0
+
+# Navbar page list
+nav:
+  - title: Blog
+    url: /archive
+
+  - title: About
+    url: /about
