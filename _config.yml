@@ -58,3 +58,5 @@ nav:
 
   - title: About
     url: /about
+
+exclude: [vendor]
