@@ -33,12 +33,12 @@
 
 // Meta data line below post title
 .post-date {
+  text-align: center;
   display: block;
   margin-top: -.5rem;
   margin-bottom: var(--spacer);
   color: var(--gray-600);
 }
-
 
 // Related posts
 .related {

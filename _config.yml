@@ -1,5 +1,5 @@
 # Setup
-title: Poole
+title: Koldskaal
 tagline: The Jekyll Butler
 url:
 paginate: 1
@@ -8,6 +8,8 @@ permalink: pretty
 
 twitter_username: jekyllrb
 github_username:  jekyll
+
+port: 3000
 
 # Build settings
 markdown: kramdown

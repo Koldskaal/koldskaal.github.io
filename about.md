@@ -17,7 +17,6 @@ There are currently two themes built on Poole:
 Learn more and contribute on [GitHub](https://github.com/poole).
 
 ## Setup
-WOWOW
 
 Some fun facts about the setup of this project include:
 

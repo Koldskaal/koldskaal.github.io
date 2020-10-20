@@ -5,14 +5,19 @@ title: Archive
 
 # Archive
 
-Browse all posts by month and year.
+A list of all posts on the site
 
-{% assign postsByYearMonth = site.posts | group_by_exp: "post", "post.date | date: '%B %Y'" %}
-{% for yearMonth in postsByYearMonth %}
-  <h2>{{ yearMonth.name }}</h2>
-  <ul>
-    {% for post in yearMonth.items %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+{% assign postsByDate = site.posts | group_by_exp: "post", "post.date | date: '%-d %B %Y'" %}
+
+{% for date in postsByDate %}
+  <div class="archive-frame">
+    {% for post in date.items %}
+        <a href="{{ post.url }}" class="archive-box">
+
+          <div class="post-title">{{ post.title }}</div>
+          <div class="archive-date">{{ post.date | date: '%d-%m-%Y' }}</div>
+        </a>
+  {% endfor %}
+
+  </div>
 {% endfor %}
