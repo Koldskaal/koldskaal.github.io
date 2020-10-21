@@ -15,7 +15,7 @@ A list of all posts on the site
         <a href="{{ post.url }}" class="archive-box">
 
           <div class="post-title">{{ post.title }}</div>
-          <div class="archive-date">{{ post.date | date: '%d-%m-%Y' }}</div>
+          <div class="archive-date">{{ post.date | date_to_string }}</div>
         </a>
   {% endfor %}
 
