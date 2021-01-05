@@ -47,6 +47,8 @@
 
   --title-hover-color: #B3B3B3;
 
+  --blockquote-color: var(--gray-500);
+
 }
 
 [data-theme="light"] {
@@ -58,7 +60,8 @@
   --border-color: var(--gray-300);
   --code-bg: var(--gray-000);
   --primary-color: #ffc961;
-  --primary-color-reverse: ##ff922b;
+  --primary-color-reverse: #ff922b;
+  --blockquote-color: var(--gray-700);
 }
 
 [data-theme="dark"] {
